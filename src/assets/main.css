@@ -13,6 +13,18 @@ body {
   background-color: #F2F0F9;
 }
 
+input[type=checkbox] {
+  accent-color: #6D5BD0;
+  outline: auto #8B83BA;
+  width: 20px;
+  height: 20px;
+}
+
+input[type=radio] {
+  accent-color: #6D5BD0;
+  /* outline: auto #8B83BA; */
+}
+
 
 * {
   font-family: Inter;

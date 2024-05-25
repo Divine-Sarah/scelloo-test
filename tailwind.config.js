@@ -21,6 +21,7 @@ export default {
       'apppurple-400': "#F4F2FF",
       'appwhite': "#FFFFFF",
       'apppurple-500': "#8B83BA",
+      'apppurple-600': "#F2F0F9",
       'appblue': "#4A4AFF",
       'appgreen': "#007F00",
       'appgreen-100': "#CDFFCD",
