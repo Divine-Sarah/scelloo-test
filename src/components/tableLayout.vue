@@ -3,7 +3,7 @@
         <div class="w-full max-w-[1100px] rounded-lg bg-appwhite shadow-[#00000033] shadow-xl h-full max-h-[1118px]">
             <section class="flex items-center justify-between  py-[15px]  px-[20px]">
                 <div class="flex space-x-[20px] items-center">
-                    <div @click="toogleFilter"
+                    <div @click="toggleFilter"
                         class="border relative rounded-md w-[88px]  flex gap-[10px] p-[10px] items-center  hover:border-2 hover:border-apppurple-300">
                         <img src="/icons/Filter.svg" alt="">
                         Filter
@@ -178,11 +178,6 @@ export default {
     methods: {
         toggleFilter() {
             this.isOpen = !this.isOpen;
-            console.log("Toggle Filter: isOpen =", this.isOpen);
-        },
-        toggleMore() {
-            this.open = !this.open;
-            console.log("Toggle More: open =", this.open);
         },
         getCollapseState() {
             const state = JSON.parse(localStorage.getItem("collapsibles")) || {};

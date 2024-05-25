@@ -5,6 +5,7 @@ export default createStore({
     state: {
         tableData: [{}],
         // currentTab: 0,
+        userStatus: {}
     },
 
     mutations: {

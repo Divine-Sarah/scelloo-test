@@ -39,6 +39,26 @@ const displayUsers = (tab, payload) => {
   return users;
 };
 
+const displayStatus = (selectedOption, payload) => {
+  let users = [];
+
+  switch (selectedOption) {
+    case "All":
+      users = payload; // Display all users
+      break;
+
+    case "Active":
+      users = payload.filter(user => user.userStatus === "Active"); // Display users with status "Active"
+      break;
+
+    default:
+      users = payload; // Display all users by default
+      break;
+  }
+
+  return users;
+};
+
 const searchUsersInput = (input, payload) => {
   let users = [];
   const lowerCaseInput = input.toLowerCase();
@@ -57,4 +77,4 @@ const searchUsersInput = (input, payload) => {
   return users;
 };
 
-export { displayUsers, searchUsersInput };
+export { displayUsers, searchUsersInput, displayStatus };
